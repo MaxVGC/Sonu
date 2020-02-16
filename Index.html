@@ -17,22 +17,28 @@
 <body>
 
 	<nav class="navbar navbar-expand navbar-dark" style="background-color:black"><a href="#home"
-			class="navbar-brand"><img alt="" src="Images/logo1.png" height="40" class="d-inline-block align-top">
+			class="navbar-brand" style="text-align: right;"><img alt="" src="Images/logo1.png" height="40" class="d-inline-block align-top">
 			Sistema organizado de notas
 			universitario</a></nav>
 
 	<div class="container" style="width: 100%;">
 		<div class="row" style="width: 100%;">
-			<div class="col">
+			<div class="col-4">
 				<center><img src="Images/Login.png" id="login" height="40px"></center>
 				<form class="">
 					<div class="form-group">
-						<center><label class="form-label" id="F2">Usuario</label></center><input
-							placeholder="Ingrese usuario" type="text" class="form-control">
+						<center><label class="form-label" id="F2">Usuario</label></center>
+						<div class="input-group-prepend">
+							<img src="Images/Icon_User.png" id="icon_user">
+							<input placeholder="Ingrese usuario" type="text" class="form-control">
+						</div>
 					</div>
 					<div class="form-group">
 						<center><label class="form-label" id="F2" for="formBasicPassword">Contraseña</label></center>
-						<input placeholder="Contraseña" type="password" id="formBasicPassword" class="form-control">
+						<div class="input-group-prepend">
+							<img src="Images/Icon_Pass.png" id="icon_user">
+							<input placeholder="Contraseña" type="password" id="formBasicPassword" class="form-control">
+						</div>
 					</div>
 					<input type="submit" id="btn_login" name="submit" value="Ingresar" class="boton">
 					<input type="submit" id="btn_register" name="submit" value="Registrarse" class="boton">
@@ -41,8 +47,10 @@
 			<div class="col">
 				<div id="content">
 					<div id="d2">
-						<img src="Images/image2.png" id="img_tp" >
-						<img class="top"  src="Images/image.jpg" style="position: absolute; top:0px; left:0px" id="img_tp" >
+						<img src="Images/image2.png" id="img_tp">
+						<div>
+							<img class="top" src="Images/image.jpg" id="img_tp">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -58,4 +66,3 @@
 </body>
 
 </html>
-/**/
